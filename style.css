@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body{
+    background: linear-gradient(135deg,#6e8efb,#a777e3);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+}
+h1{
+    color:#333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.screen{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+#start-screen {
+    padding: 40px 20px;
+}
+#start-screen p{
+    color:#666;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.btn{
+    background: linear-gradient(to right,#6e8efb,#a777e3);
+    color:white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(110,142,251,0.4);
+}
+
+.option{
+    width:100%;
+    text-align: left;
+    padding: 15px;
+    margin: 10px 0;
+    background-color:#f8f9fa;
+    border:2px solid #e9ecef;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option:hover {
+    background-color: #e9ecef;
+    transform: translateX(5px);
+}
+
+.selected {
+    background-color: #d3e0ff;
+    border-color: #6e8efb;
+}
+
+.correct {
+    background-color: #d4edda;
+    border-color: #28a745;
+}
+
+.incorrect {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+}
+
+#question {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#progress {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 1.1rem;
+    color: #e63946;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#score {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+#result-message {
+    font-size: 1.4rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+.score-display {
+    font-size: 5rem;
+    color: #6e8efb;
+    margin: 20px 0;
+}
+
+.emoji {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}

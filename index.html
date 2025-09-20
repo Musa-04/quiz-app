@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster - Test Your Knowledge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QuizMaster</h1>
+        
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <p>Test your knowledge with this fun quiz! Answer multiple-choice questions and see how well you score. You'll have 15 seconds per question.</p>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+        
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div id="timer">Time left: <span id="time">15</span>s</div>
+            <div id="progress">Question <span id="current">1</span> of <span id="total">5</span></div>
+            <h2 id="question"></h2>
+            <div id="options-container"></div>
+            <button id="next-btn" class="btn" style="display: none;">Next Question</button>
+        </div>
+        
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <div class="emoji" id="result-emoji">🎉</div>
+            <h2 id="result-message"></h2>
+            <div class="score-display" id="score"></div>
+            <p>You got <span id="correct-answers">0</span> out of <span id="total-questions">0</span> questions right!</p>
+            <button id="restart-btn" class="btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
