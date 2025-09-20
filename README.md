@@ -16,5 +16,3 @@ Answer multiple-choice questions, see your score, and play again.
 
 ---
 
-## Project Structure
-
