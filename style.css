@@ -13,6 +13,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin:10px;
 }
 .container{
     background-color: white;
